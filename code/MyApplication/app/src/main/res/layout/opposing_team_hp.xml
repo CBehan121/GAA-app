@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="top"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:id="@+id/ParentOfLogin"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ClubNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:paddingBottom="50dp">
+        <TextView
+            android:id="@+id/teamNumber"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/DivLin"
+        android:layout_above="@+id/ClubNumber"
+        android:paddingBottom="10dp"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Division"
+            android:textSize="20sp">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Challenge_creation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_below="@id/ClubNumber">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/editbutton"
+
+            android:text="@string/challenge_team"
+            android:id="@+id/challengeTeamButton"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:textSize="30sp"
+            android:id="@+id/OpposingTeamName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/dublin"
+        android:layout_alignParentTop="true"
+        tools:ignore="UnknownId" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        app:srcCompat="@drawable/gaa"
+        tools:ignore="ContentDescription,NotSibling,UnknownId"
+        />
+
+</RelativeLayout>

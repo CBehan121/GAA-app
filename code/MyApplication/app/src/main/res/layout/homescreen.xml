@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="top"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:id="@+id/ParentOfLogin"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/broadcast_creation"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:id="@+id/TeamName"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/LogoutButtonLin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/LogoutUser"
+            android:background="@drawable/editbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/logout"
+
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/broadcast_creation"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:paddingBottom="30dp"
+        android:paddingTop="20dp">
+        <Button
+            android:id="@+id/createBroadcastButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/editbutton"
+
+            android:text="@string/create_broadcast"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/CalendarButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/broadcast_creation"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="30dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="OpenCalendar"
+            android:text="@string/calendar"
+            android:background="@drawable/editbutton"
+            android:id="@+id/CalendarButtons"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/CalendarButton"
+        android:id="@+id/ClubSearchButton"
+        android:paddingBottom="30dp">
+
+    <Button
+        android:id="@+id/ClubListScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/editbutton"
+
+        android:text="@string/club_search" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ClubSearchButton"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/GameButton">
+
+        <Button
+            android:id="@+id/gamesButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/editbutton"
+
+            android:text="@string/games" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/progress_Bar"
+        >
+        <ProgressBar
+            android:id="@+id/progress_Bar_Inner"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/colorPrimaryDark"
+            android:indeterminateTintMode="src_atop"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:paddingTop="20dp"
+        android:paddingBottom="60dp"
+        android:layout_above="@id/broadcast_creation"
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/dublin"
+        android:layout_alignParentTop="true"
+        tools:ignore="NotSibling,UnknownId" />
+
+
+</RelativeLayout>

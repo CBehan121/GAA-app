@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ThirdYearProject">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginScreen"
+            android:label = "ClubHub"
+            android:theme = "@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HomeScreen"
+            android:label="User home screen"
+            android:theme ="@style/AppTheme"/>
+        <activity android:name=".RegistrationScreen"
+            android:label = "Creating User"
+            android:theme = "@style/AppTheme"/>
+        <activity android:name=".BroadcastScreen"
+            android:label="Creating broadcast"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".CalendarScreen"
+            android:label="Calendar Screen"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".ForgotPassword"
+            android:label="ForgotPassword"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".ClubSearchScreen"
+            android:label="club search screen"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".OpposingTeamsHP"
+            android:label="Opposing teams HomePage"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".ChallengeRequestScreen"
+            android:theme="@style/AppTheme.PopUpTheme"
+            android:label="Challenge request screen"/>
+        <activity android:name=".MatchScreen"
+            android:label="MatchScreen"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".CancelEventScreen"
+            android:label="CancelEventScreen"
+            android:theme="@style/AppTheme.PopUpTheme"/>
+        <activity android:name=".JoinEventScreen"
+            android:theme="@style/AppTheme.PopUpTheme"
+            android:label="JoinEventScreen"/>
+
+
+    </application>
+
+</manifest>

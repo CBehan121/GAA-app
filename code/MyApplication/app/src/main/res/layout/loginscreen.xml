@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="top"
+    android:gravity="center_vertical"
+    android:id="@+id/ParentOfLogin"
+    android:background="@drawable/background">
+    <LinearLayout
+        android:layout_width="500dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scrollbarFadeDuration="50"
+            app:srcCompat="@drawable/clubhub" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="false"
+        android:text="@string/forgot_password"
+        android:background="@drawable/text_button"
+        android:stateListAnimator="@null"
+        android:onClick="ForgotPassword"
+        tools:ignore="RtlHardcoded"
+        tools:targetApi="lollipop" />
+
+
+
+    <LinearLayout
+        android:id="@+id/teamBracket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="25dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/passwordBracket">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Email"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/loginemail"
+            android:textCursorDrawable="@drawable/cursor_size"
+            android:background="@drawable/editable_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="280dp"
+            android:inputType="text"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor,TextFields" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/passwordBracket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="25dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        tools:ignore="RelativeOverlap">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/loginpassword"
+            android:textCursorDrawable="@drawable/cursor_size"
+            android:background="@drawable/editable_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="280dp"
+            android:inputType="textPassword"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_gravity="center"
+        android:paddingTop="30dp"
+        android:paddingBottom="50dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/passwordBracket"
+        android:id="@+id/logButton"
+        >
+
+        <Button
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/editbutton"
+            android:onClick="OnSendUsersName"
+            android:text="@string/login_button"
+            android:id="@+id/loginButton"
+            />
+    </LinearLayout>
+
+    <Button
+
+        android:id="@+id/RegistrationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_button"
+        android:onClick="RegisterNewUser"
+        android:text="@string/Register"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@+id/logButton"
+        app:srcCompat="@drawable/gaa"
+        tools:ignore="ContentDescription,NotSibling,UnknownId"
+        />
+
+
+</RelativeLayout>

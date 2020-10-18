@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="login">Login</string>
+    <string name="clubName">club</string>
+    <string name="login_button">Login</string>
+    <string name="age_range">Team Level</string>
+    <string name="password">Password</string>
+    <string name="clubname">Club Name</string>
+    <string name="team">Team</string>
+    <string name="the_users_creds">The users Creds</string>
+    <string name="Register">Register</string>
+    <string name="password_confirmation">Password Confirmation</string>
+    <string name="passwordReg">Password</string>
+    <string name="email">Email</string>
+    <string name="complete_registration">Complete registration</string>
+    <string name="create_broadcast">Create Broadcast</string>
+    <string name="logout">Logout</string>
+    <string name="NameofClub">Insert Registered Club Name</string>
+    <string name="venue">Venue</string>
+    <string name="date">Date</string>
+    <string name="create">Create</string>
+    <string name="Back_arrow"><![CDATA[<]]></string>
+    <string name="select_a_date">Calendar</string>
+    <string name="open_date">Club Name</string>
+    <string name="chosen_date">Open Date</string>
+    <string name="calendar">calendar</string>
+    <string name="cancel_event">Cancel event</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="club">Club</string>
+    <string name="please_enter_your_email">Please enter your email.</string>
+    <string name="cont">cont</string>
+    <string name="club_search">Club search</string>
+    <string name="ScrollView">ScrollView</string>
+    <string name="enter_club_name">Enter club name</string>
+    <string name="challenge_team">Challenge team</string>
+    <string name="challenge">Challenge</string>
+    <string name="location">location</string>
+    <string name="divisons">Divisions</string>
+    <string name="clubhub_logo">Clubhub_logo</string>
+    <string name="Email">Email</string>
+    <string name="divison">Divison</string>
+    <string name="number">Contact Number</string>
+    <string name="pitches">Pitches</string>
+    <string name="games">Games</string>
+    <string name="your_games">Your games</string>
+    <string name="Available">Available</string>
+    <string name="join_event">Join event</string>
+    <string name="Add">Add</string>
+    <string name="send_email">Send email</string>
+    <string name="pending">pending</string>
+    <string-array name="divisions">
+        <item>Select a Division</item>
+        <item>Division 1</item>
+        <item>Division 2</item>
+        <item>Division 3</item>
+        <item>Division 4</item>
+    </string-array>
+    <string-array name="venues">
+        <item>Grass Pitch</item>
+        <item>All Weather Pitch</item>
+    </string-array>
+
+</resources>

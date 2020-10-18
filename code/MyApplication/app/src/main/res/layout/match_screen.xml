@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/NoGamesLin"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You currently have no available games"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:id="@+id/AvailIcon"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/NoGamesLin2"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You currently have no pending games"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:id="@+id/YourGamIcon"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/NoGamesLin3"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You currently have no active games"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:id="@+id/ActiveIcon"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TopBar"
+        android:layout_alignParentTop="true">
+        <Button
+            android:text="@string/your_games"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Users"
+            android:layout_toLeftOf="@+id/Available"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/match_screen_buttons"
+            />
+        <Button
+            android:text="Available"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/Available"
+            android:background="@drawable/match_screen_buttons"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:text="Games"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Accepted"
+            android:layout_toRightOf="@+id/Available"
+            android:layout_toEndOf="@+id/Available"
+            android:background="@drawable/match_screen_buttons"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listView"
+        android:layout_below="@+id/TopBar">
+
+        <ListView
+            android:id="@+id/AvailList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/loadingCircleMatchScreen"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="74dp"
+        android:layout_height="71dp"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/colorPrimaryDark"
+        android:indeterminateTintMode="src_atop" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listView2"
+        android:layout_below="@+id/TopBar">
+        <ListView
+            android:id="@+id/YourList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listView3"
+        android:layout_below="@+id/TopBar">
+        <ListView
+            android:id="@+id/AcceptedList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

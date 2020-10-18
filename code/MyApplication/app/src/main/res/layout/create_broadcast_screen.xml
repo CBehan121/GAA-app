@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BroadcastScreen"
+    tools:ignore="ExtraText"
+    android:background="@drawable/background"
+    android:paddingTop="30dp">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@drawable/dublin"
+        tools:ignore="UnknownId"/>
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DateLin"
+        android:id="@+id/createBroadcast"
+        android:paddingBottom="30dp"
+        android:paddingTop="40dp">
+        <Button
+            android:id="@+id/createBroadcastB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/editbutton"
+            android:text="@string/create"
+            tools:ignore="InvalidId" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/Spinner2"
+        android:id="@+id/Spinner1">
+        <Spinner
+            android:id="@+id/divisionspinner"
+            android:layout_width="214dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:entries="@array/divisions"
+             />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Spinner2"
+        android:layout_centerVertical="true">
+        <Spinner
+            android:id="@+id/venuespinner"
+            android:layout_width="214dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginStart="96dp"
+            android:layout_marginLeft="96dp"
+            android:entries="@array/venues"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Spinner2"
+        android:id="@+id/DateLin">
+        <TextView
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/editbutton"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/date"
+            android:textColorHint="@color/black"
+            android:textSize="20sp"
+            android:importantForAutofill="no"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:width="150dp"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

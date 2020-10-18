@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="start"
+    android:background="@drawable/background">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/Club"
+        android:layout_above="@id/NumberLin">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/club"
+            android:textSize="20sp"
+            android:paddingTop="20dp"/>
+
+        <EditText
+            android:id="@+id/clubname"
+            android:textCursorDrawable="@drawable/cursor_size"
+            android:background="@drawable/editable_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="220dp"
+            android:inputType="text" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:id="@+id/DivisionLin"
+        android:layout_above="@id/Email">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/divison"
+                android:textSize="20sp"
+                />
+
+            <Spinner
+                android:id="@+id/CLubDivision"
+                android:layout_width="214dp"
+                android:layout_height="35dp"
+                android:background="@drawable/dropdown_registration"
+                android:entries="@array/divisions"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/NumberLin"
+        android:layout_above="@id/DivisionLin">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/number"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/ClubNumber"
+            android:textCursorDrawable="@drawable/cursor_size"
+            android:background="@drawable/editable_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="220dp"
+            android:inputType="text" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/pitchesLin"
+        android:layout_below="@id/Email">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pitches"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/pitches"
+            android:textCursorDrawable="@drawable/cursor_size"
+            android:background="@drawable/editable_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="220dp"
+            android:inputType="text"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:id="@+id/Email"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/emailText"
+            android:textCursorDrawable="@drawable/cursor_size"
+            android:background="@drawable/editable_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="220dp"
+            android:inputType="textEmailAddress" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:id="@+id/password"
+        android:layout_below="@id/pitchesLin"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/passwordReg"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/password1"
+            android:textCursorDrawable="@drawable/cursor_size"
+            android:background="@drawable/editable_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="220dp"
+            android:inputType="textPassword" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/password_confirm"
+        android:layout_below="@+id/password"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password_confirmation"
+            android:textSize="20sp"/>
+
+        <EditText
+
+            android:id="@+id/password2"
+            android:background="@drawable/editable_text"
+            android:textCursorDrawable="@drawable/cursor_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="220dp"
+            android:inputType="textPassword"
+            />
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/RegisterButton"
+        android:layout_below="@+id/password_confirm"
+        android:paddingTop="20dp">
+        <Button
+            android:id="@+id/regButton"
+            android:background="@drawable/editbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/complete_registration"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="149dp"
+        android:scrollbarFadeDuration="50"
+        app:srcCompat="@drawable/clubhub" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/AddPitch"
+        android:layout_toRightOf="@id/pitchesLin"
+        android:layout_alignBottom="@+id/pitchesLin"
+        android:weightSum="6">
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="@string/Add"
+            android:textSize="12sp"
+            android:id="@+id/AddPitches"
+            android:textColor="@android:color/black"
+            android:background="@color/Transparent"
+
+            />
+    </LinearLayout>
+
+</RelativeLayout>
